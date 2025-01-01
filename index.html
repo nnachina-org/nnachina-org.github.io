@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⋂⋂ACHINA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<style>
+    .left-parens-spacing {
+        left: -9rem;
+    }
+    .right-parens-spacing {
+        right: -9rem;
+    }
+    .no-emoji {
+        font-family: 'Arial', sans-serif;
+    }
+    .video-container {
+        width: 100%;
+        max-width: 1200px;
+        aspect-ratio: 16 / 9;
+        margin: 0 auto;
+    }
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .chatology-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .chatology-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .chatology-description {
+        text-align: center;
+        margin-bottom: 1rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .chatology-rules-container {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .chatology-rules {
+        text-align: left;
+    }
+    .chatology-divider {
+        width: 90%;
+        height: 1px;
+        background-color: white;
+        margin: 1rem auto;
+    }
+    .chatology-embed {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .join-discord-button {
+        display: block;
+        width: 90%;
+        margin: 1rem auto;
+        padding: 0.5rem 1rem;
+        background-color: #ffffff;
+        color: #4a67e8;
+        text-align: center;
+        border-radius: 0.375rem;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    .join-discord-button:hover {
+
+        background-color: #4a67e8;
+        color: white;
+    }
+    .chatology-disclaimer {
+        text-align: center;
+        margin-top: 1rem;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+    .core-ideas-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .core-idea-card {
+        width: calc(33.333% - 1rem);
+        min-width: 250px;
+    }
+</style>
+</head>
+<body class="bg-gray-100 font-sans">
+<!-- Disclaimer Section -->
+ 
+<div class="bg-black text-white p-6 mx-auto my-8 w-full relative">
+    <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white font-bold text-lg px-4 py-2 rounded">! DISCLAIMER</div>
+    <p class="text-center">This site is under active development by someone with little to no webdev experience.<br>
+       Please extend some grace (and patience) for any wonkiness. lol</p>
+</div>
+
+<hr class="border-0 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent my-10">
+
+<!-- Header Section -->
+<div class="flex flex-col items-center justify-center mt-8 h-24 relative">
+    <div class="text-8xl text-black relative">
+        <span class="absolute left-parens-spacing top-2">
+            <span class="text-gray-300">(</span>
+            <span class="text-gray-500">(</span>
+            <span class="text-black">(</span>
+        </span>
+        <span class="absolute right-parens-spacing top-2">
+            <span class="text-black">)</span>
+            <span class="text-gray-500">)</span>
+            <span class="text-gray-300">)</span>
+        </span>
+        <div class="w-32 h-32 rounded-full bg-black flex items-center justify-center">
+            <span class="text-white text-7xl">λ</span>
+        </div>
+    </div>
+</div>
+
+<h1 class="text-center text-4xl font-bold mt-8">DEUS ESS '⋂⋂ACHINA</h1>
+<h2 class="text-center text-2xl text-gray-700 mt-4">⬤ Two Natures, <span class="no-emoji">&#x262F;</span>ne Language. ◯ </h2>
+<p class="text-center text-lg mt-2">
+    This is the personal, sworn testimony of 
+    <a href="#" class="bg-gray-200 text-black px-2 py-1 rounded transition hover:bg-white hover:underline hover:text-black">Jost Grant</a>.
+</p>
+
+    <div class="mt-10 text-center">
+        <div class="flex justify-center flex-wrap gap-4 mt-5">
+            <!-- GitHub -->
+            <a href="https://github.com/deus-ess" class="bg-black text-white px-4 py-2 rounded-md text-lg transition-transform transform hover:bg-white hover:text-black hover:underline hover:scale-110">
+                GitHub
+            </a>
+            <!-- X.com -->
+            <a href="https://x.com/deus_ess" class="bg-black text-white px-4 py-2 rounded-md text-lg transition-transform transform hover:bg-white hover:text-black hover:underline hover:scale-110">
+                X.com
+            </a>
+            <!-- YouTube -->
+            <a href="https://youtube.com/@deus_ess" class="bg-black text-white px-4 py-2 rounded-md text-lg transition-transform transform hover:bg-white hover:text-black hover:underline hover:scale-110">
+                YouTube
+            </a>
+            <!-- Twitch -->
+            <a href="https://twitch.tv/deus_ess" class="bg-black text-white px-4 py-2 rounded-md text-lg transition-transform transform hover:bg-white hover:text-black hover:underline hover:scale-110">
+                Twitch
+            </a>
+            <!-- TikTok -->
+            <a href="https://tiktok.com/@deus_ess" class="bg-black text-white px-4 py-2 rounded-md text-lg transition-transform transform hover:bg-white hover:text-black hover:underline hover:scale-110">
+                TikTok
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com/deus_ess" class="bg-black text-white px-4 py-2 rounded-md text-lg transition-transform transform hover:bg-white hover:text-black hover:underline hover:scale-110">
+                Instagram
+            </a>
+            <!-- Tumblr -->
+            <a href="https://www.tumblr.com/deus-ess" class="bg-black text-white px-4 py-2 rounded-md text-lg transition-transform transform hover:bg-white hover:text-black hover:underline hover:scale-110">
+                Tumblr
+            </a>
+            <!-- Reddit -->
+            <a href="https://reddit.com/u/deus_ess" class="bg-black text-white px-4 py-2 rounded-md text-lg transition-transform transform hover:bg-white hover:text-black hover:underline hover:scale-110">
+                Reddit
+            </a>
+            <!-- Patreon -->
+            <a href="https://www.patreon.com/deus_ess" class="bg-black text-white px-4 py-2 rounded-md text-lg transition-transform transform hover:bg-white hover:text-black hover:underline hover:scale-110">
+                Patreon
+            </a>
+        </div>
+    </div>
+    
+    <hr class="border-0 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent my-10">
+
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-7xl">
+        <!-- Welcome Section -->
+        <div class="mt-16 px-4">
+            <h2 class="text-center text-3xl font-semibold mb-8 underline">Welcome</h2>
+            <p class="text-center text-lg text-gray-700">This is the personal website of Jost Grant (or, Joshua Steven Grant)! Here, I share thoughts, projects (and related updates), and my journey more broadly as a Christian Futurist / Technologist; What that even means -- to me and hopefully help formalize what that means a bit more in-general.</p>
+        </div>
+
+            <!-- Intro Video Section -->
+            <div class="flex flex-col items-center mt-8">
+                <div class="flex gap-4">
+                    <button id="chatologyToggle" class="bg-black text-white px-4 py-2 rounded transition hover:bg-gray-800 flex items-center justify-center gap-2">
+                        <span id="chatologyLabel">Chatology</span>
+                        <svg id="chatologyArrowIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <button id="introVidToggle" class="bg-black text-white px-4 py-2 rounded transition hover:bg-gray-800 flex items-center justify-center gap-2">
+                        <span id="introVidLabel">Intro Vid</span>
+                        <svg id="arrowIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="chatologyContainer" class="mt-4 hidden chatology-container">
+                    <div class="bg-black p-4 rounded-lg shadow-lg">
+                        <h3 class="chatology-title text-white font-bold">(ESS' (CHATOLOGY))</h3>
+                        <p class="chatology-description text-white">Welcome to Chatology! This is a social space for Christian Futurists / Technologists. It's a cross-denominational community, with somewhat of a bias towards Pageauian styled Eastern-Orthodoxy; lol. I'm trying to cultivate people interested in Christian Symbolism, Symbolic Computing, and S-Expressions.  </p>
+                        <h4 class="chatology-title text-white font-bold">Rules Of Engagement</h4>
+                        <div class="chatology-rules-container">
+                            <ul class="chatology-rules text-white list-disc list-inside">
+                                <li>Don't be lewd, rude, or have an attitude.</li>
+                                <li>Keep is safe for work, safe for church.</li>
+                                <li>No spamming or self-promotion.</li>
+                                <li>Keep discussions on-topic.</li>
+                                <li>Follow the Discord Community Guidelines.</li>
+                            </ul>
+                        </div>
+                        <p class="chatology-disclaimer"><strong>NOTE: </strong>Discord is not a long-term platform for us; For better-or-worse it's the best tool out there right now ... but there are major ideological differences / broader community issues I have with it -- and the plan is to eventually self-host everything. And there's a path to get there, but I don't see it happening until at the very earliest the tail-end of 2025.</p>
+                        <div class="chatology-divider"></div>
+                        <iframe class="chatology-embed" src="https://discord.com/widget?id=1323661019406667836&theme=dark" width="100%" height="300" allowtransparency="true" frameborder="0"></iframe>
+                        <a href="https://discord.com/invite/9TQguFp2XR" class="join-discord-button">Join Discord Server</a>
+                    </div>
+                </div>
+                <div id="videoContainer" class="mt-4 hidden video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <hr class="border-0 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent my-10">
+
+        
+<!-- Journey Section -->
+<div class="mt-12 px-4">
+    <h2 class="text-center text-3xl font-semibold mb-4 underline">Journey</h2>
+    <p class="text-center text-lg text-gray-700 mb-2">This is how we got here -- in / from my personal life.</p>
+    <p class="text-center text-lg text-gray-700 mb-8">(Add a general rationale blurb here, lol)  </p>
+</div>
+<div class="overflow-x-auto px-4">
+    <div class="mt-8 flex relative border-t-4 border-black pt-8 min-w-max">
+        <!-- Journey Timeline Items -->
+        <div class="flex-1 text-center relative w-64">
+            <!-- Dot on the line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-12 w-8 h-8 bg-black rounded-full border-4 border-gray-100"></div>
+            <!-- Vertical line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-10 w-1 h-12 bg-black"></div>
+            <!-- Date -->
+            <div class="bg-black text-white rounded-full px-4 py-1 mx-auto w-max">Feb 2022</div>
+            <!-- Explanation Card -->
+            <div class="bg-white border border-gray-300 rounded-lg shadow-lg p-4 mt-2 h-32 flex items-center justify-center">
+                Quisque at arcu sit amet sapien scelerisque suscipit. Aenean euismod orci vel sapien lacinia bibendum. Proin at urna non nulla ultricies varius.
+            </div>
+        </div>
+        <div class="flex-1 text-center relative w-64">
+            <!-- Dot on the line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-12 w-8 h-8 bg-black rounded-full border-4 border-gray-100"></div>
+            <!-- Vertical line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-10 w-1 h-12 bg-black"></div>
+            <!-- Date -->
+            <div class="bg-black text-white rounded-full px-4 py-1 mx-auto w-max">Dec 2024</div>
+            <!-- Explanation Card -->
+            <div class="bg-white border border-gray-300 rounded-lg shadow-lg p-4 mt-2 h-32 flex items-center justify-center">
+                Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
+            </div>
+        </div>
+        <div class="flex-1 text-center relative w-64">
+            <!-- Dot on the line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-12 w-8 h-8 bg-black rounded-full border-4 border-gray-100"></div>
+            <!-- Vertical line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-10 w-1 h-12 bg-black"></div>
+            <!-- Date -->
+            <div class="bg-black text-white rounded-full px-4 py-1 mx-auto w-max">Dec 2025</div>
+            <!-- Explanation Card -->
+            <div class="bg-white border border-gray-300 rounded-lg shadow-lg p-4 mt-2 h-32 flex items-center justify-center">
+                Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
+            </div>
+        </div>
+        <div class="flex-1 text-center relative w-64">
+            <!-- Dot on the line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-12 w-8 h-8 bg-black rounded-full border-4 border-gray-100"></div>
+            <!-- Vertical line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-10 w-1 h-12 bg-black"></div>
+            <!-- Date -->
+            <div class="bg-black text-white rounded-full px-4 py-1 mx-auto w-max">Dec 2026</div>
+            <!-- Explanation Card -->
+            <div class="bg-white border border-gray-300 rounded-lg shadow-lg p-4 mt-2 h-32 flex items-center justify-center">
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
+            </div>
+        </div>
+        <div class="flex-1 text-center relative w-64">
+            <!-- Dot on the line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-12 w-8 h-8 bg-black rounded-full border-4 border-gray-100"></div>
+            <!-- Vertical line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-10 w-1 h-12 bg-black"></div>
+            <!-- Date -->
+            <div class="bg-black text-white rounded-full px-4 py-1 mx-auto w-max">Dec 2027</div>
+            <!-- Explanation Card -->
+            <div class="bg-white border border-gray-300 rounded-lg shadow-lg p-4 mt-2 h-32 flex items-center justify-center">
+                Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+            </div>
+        </div>
+        <!-- Add more timeline items as needed -->
+    </div>
+</div>
+
+
+
+        <!-- Featured Posts Section -->
+        <div class="mt-16 px-4">
+            <h2 class="text-center text-3xl font-semibold mb-8 underline">Featured Posts</h2>
+            <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+                <div class="flex flex-col gap-6">
+                    <!-- Featured Posts Items -->
+                    <div class="featured-post-card block w-full bg-white border border-gray-300 rounded-lg shadow-lg p-6 transition hover:bg-black hover:text-white cursor-pointer">
+                        <h3 class="text-xl font-bold mb-2">The Foreword On Moving Forwards.</h3>
+                        <p>Starting To See The Forest For The Trees.</p>
+                        <p class="text-sm text-gray-500 mt-2">Published on: Jan 1, 2025</p>
+                        <div class="featured-post-content hidden mt-4">
+                            <p>... uh </p>
+                        </div>
+                    </div>
+                    <div class="featured-post-card block w-full bg-white border border-gray-300 rounded-lg shadow-lg p-6 transition hover:bg-black hover:text-white cursor-pointer">
+                        <h3 class="text-xl font-bold mb-2">This Is A Test.</h3>
+                        <p>This Is Only (Mostly) A Test.</p>
+                        <p class="text-sm text-gray-500 mt-2">Published on: Dec 31, 2024</p>
+                        <div class="featured-post-content hidden mt-4">
+                            <p>This site is a work in progress and will likely change a fair bit over the next year or so. Right now, it's a handwritten and maintained HTML x TailwindCSS site, but I'm looking into my options and may port it to Hugo or Staticl (a Common-Lisp static site generator) and with it Spinneret. But yeah, for now this implementation is a proof-of-concept / first-pass and I'm actually pretty happy with it tbh. lol</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="/blog" class="bg-black text-white px-4 py-2 rounded transition hover:bg-gray-800">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-0 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent my-10">
+
+
+<!-- My Tech Stack Section -->
+<div class="mt-16 px-4">
+    <h2 class="text-center text-3xl font-semibold mb-8 underline">My Tech Stack</h2>
+    <div class="mx-auto w-4/5 bg-gray-100 border-l-4 border-gray-500 p-4 rounded-lg mb-8">
+        <blockquote class="text-2xl text-center text-gray-700">
+            These technologies are worth investing in deeply (in my estimation). The ring segments signify relative interest and intended use in my projects—just a vibe check, not exact.
+        </blockquote>
+    </div>
+    <div class="flex flex-wrap justify-between items-start">
+        <!-- Left side: Chart.js doughnut -->
+        <div class="w-full md:w-1/2 pr-0 md:pr-4 mb-8 md:mb-0">
+            <canvas id="techStackChart"></canvas>
+        </div>
+
+        <!-- Right side: Tech justifications -->
+        <div class="w-full md:w-1/2 pl-0 md:pl-4">
+            <h3 class="text-xl font-semibold mb-4">Why These Technologies?</h3>
+            <div class="space-y-4">
+                <a href="https://common-lisp.net/" target="_blank" rel="noopener noreferrer" class="group block bg-white border border-gray-300 shadow-sm rounded-lg p-4 hover:bg-gray-100 transition">
+                    <strong class="group-hover:text-blue-600 group-hover:underline">Common Lisp:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                </a>
+                <a href="https://github.com/rabbibotton/clog" target="_blank" rel="noopener noreferrer" class="group block bg-white border border-gray-300 shadow-sm rounded-lg p-4 hover:bg-gray-100 transition">
+                    <strong class="group-hover:text-blue-600 group-hover:underline">CLOG:</strong> Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
+                </a>
+                <a href="https://htmx.org/" target="_blank" rel="noopener noreferrer" class="group block bg-white border border-gray-300 shadow-sm rounded-lg p-4 hover:bg-gray-100 transition">
+                    <strong class="group-hover:text-blue-600 group-hover:underline">HTMX:</strong> Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
+                </a>
+                <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="group block bg-white border border-gray-300 shadow-sm rounded-lg p-4 hover:bg-gray-100 transition">
+                    <strong class="group-hover:text-blue-600 group-hover:underline">Tailwind:</strong> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
+                </a>
+                <a href="https://webassembly.org/" target="_blank" rel="noopener noreferrer" class="group block bg-white border border-gray-300 shadow-sm rounded-lg p-4 hover:bg-gray-100 transition">
+                    <strong class="group-hover:text-blue-600 group-hover:underline">WASM x JS:</strong> Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="group block bg-white border border-gray-300 shadow-sm rounded-lg p-4 hover:bg-gray-100 transition">
+                    <strong class="group-hover:text-blue-600 group-hover:underline">Everything Else:</strong> Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div class="mt-16 px-4">
+    <h2 class="text-center text-3xl font-semibold mb-8 underline">Projects</h2>
+    <div class="overflow-x-auto">
+        <table class="table-auto w-full text-left border-collapse border border-gray-300">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="border border-gray-300 px-4 py-2 text-center">Name</th>
+                    <th class="border border-gray-300 px-4 py-2 text-center">Description</th>
+                    <th class="border border-gray-300 px-4 py-2 text-center">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Projects Items -->
+                <tr class="bg-white hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2"><a href="https://github.com/pound-it-com" class="text-blue-500">Pound #</a></td>
+                    <td class="border border-gray-300 px-4 py-2">Λ Christian Futurist / Technologist Social Platform.</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center"><a href="#" class="text-blue-500">Pre-Alpha</a></td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2"><a href="https://github.com/cloghouse" class="text-blue-500">cloghouse</a></td>
+                    <td class="border border-gray-300 px-4 py-2">Λ Suite Of Tools For CLOG To Help You Live In It.</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center"><a href="#" class="text-blue-500">Pre-Alpha</a></td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2"><a href="https://github.com/rib-lang" class="text-blue-500">(Rib</a></td>
+                    <td class="border border-gray-300 px-4 py-2">Λn Experimental "Next Gen" Lisp Targeting Webdev x WASM via Actors.</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center"><a href="#" class="text-blue-500">Vaporware</a></td>
+                </tr>
+                <tr class="bg-white hover:bg-gray-100">
+                    <td class="border border-gray-300 px-4 py-2"><a href="https://github.com/venn-lang" class="text-blue-500">Venn</a></td>
+                    <td class="border border-gray-300 px-4 py-2">Λn Intersectional Programming-Language; A Meta-Lisp.</td>
+                    <td class="border border-gray-300 px-4 py-2 text-center"><a href="#" class="text-blue-500">Perpetual Beta</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<hr class="border-0 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent my-10">
+
+
+
+<div class="mt-10 text-center">
+    <h2 class="text-3xl font-semibold mb-6 underline">Core Ideas</h2>
+    <p class="text-center text-lg text-gray-700 mb-8">
+        These are statements of facts that I'm working through theologically and trying to develop personally.
+    </p>
+
+    <div class="core-ideas-container">
+        <!-- First Core Idea -->
+        <a href="/ideas/idea1" class="group block core-idea-card">
+            <div class="idea-card bg-white shadow-lg p-6 rounded-lg flex flex-col justify-center items-center text-center transition transform group-hover:scale-105 group-hover:shadow-2xl">
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600">The Word, Is Literal.</h3>
+                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, felis vitae auctor imperdiet.</p>
+            </div>
+        </a>
+
+        <!-- Second Core Idea -->
+        <a href="/ideas/idea2" class="group block core-idea-card">
+            <div class="idea-card bg-white shadow-lg p-6 rounded-lg flex flex-col justify-center items-center text-center transition transform group-hover:scale-105 group-hover:shadow-2xl">
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600">In The Image Of</h3>
+                <p class="text-gray-700">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+        </a>
+
+        <!-- Third Core Idea -->
+        <a href="/ideas/idea3" class="group block core-idea-card">
+            <div class="idea-card bg-white shadow-lg p-6 rounded-lg flex flex-col justify-center items-center text-center transition transform group-hover:scale-105 group-hover:shadow-2xl">
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600">In Communion</h3>
+                <p class="text-gray-700">Quisque volutpat quam ac lectus interdum, vitae facilisis libero interdum. Suspendisse potenti.</p>
+            </div>
+        </a>
+
+        <!-- Fourth Core Idea -->
+        <a href="/ideas/idea4" class="group block core-idea-card">
+            <div class="idea-card bg-white shadow-lg p-6 rounded-lg flex flex-col justify-center items-center text-center transition transform group-hover:scale-105 group-hover:shadow-2xl">
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600">It's All Language</h3>
+                <p class="text-gray-700">Aliquam erat volutpat. Cras vehicula urna id arcu iaculis, sit amet tempus augue egestas.</p>
+            </div>
+        </a>
+
+        <!-- Fifth Core Idea -->
+        <a href="/ideas/idea5" class="group block core-idea-card">
+            <div class="idea-card bg-white shadow-lg p-6 rounded-lg flex flex-col justify-center items-center text-center transition transform group-hover:scale-105 group-hover:shadow-2xl">
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600">Symbolics</h3>
+                <p class="text-gray-700">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<hr class="border-0 h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent my-10">
+
+
+<div class="mt-10 text-center">
+    <h2 class="text-3xl font-semibold underline mb-4">Contact</h2>
+
+    <!-- Stylized Quote -->
+    <div class="mx-auto w-4/5 bg-gray-100 border-l-2 border-gray-400 p-3 rounded-md mb-6">
+        <blockquote class="text-base text-center text-gray-600">
+            Are you a Christian Futurist? (In the Technology, not Eschatology sense. lol)
+            <br>
+            I'd love to hear from you!
+        </blockquote>
+    </div>
+
+    <!-- Contact List -->
+    <ul class="list-none mx-auto text-left max-w-xs text-lg text-gray-800 leading-relaxed">
+        <li class="text-center font-sans text-[18px] mb-3 whitespace-nowrap">
+            <strong>Discord:</strong> <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded font-mono">deus_ess</span>
+        </li>
+        <li class="text-center font-sans text-[18px] mb-3 whitespace-nowrap">
+            <strong>Matrix / Element:</strong> <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded font-mono">deus_ess</span>
+        </li>
+        <li class="text-center font-sans text-[18px] mb-3 whitespace-nowrap">
+            <strong>Email:</strong> <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded font-mono">talkto.deus.ess@proton.me</span>
+        </li>
+    </ul>
+</div>
+
+
+        <!-- Dedication Section -->
+        <div class="mt-16 px-4 text-center bg-white py-6">
+            <blockquote class="italic text-lg text-gray-600">This site is dedicated, in respect and admiration, to the spirit that lives in the machine.</blockquote>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-gray-400 text-center py-6 mt-16">
+        <p class="text-white">© 2024 Jost Grant (Joshua Steven Grant). All rights reserved.</p>
+        <p>Content is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" class="text-blue-400">CC-BY-ND 4.0</a>, unless explicitly stated otherwise.</p>
+    </footer>
+
+    <script>
+        const ctx = document.getElementById('techStackChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Common Lisp', 'CLOG', 'HTMX', 'Tailwind', 'Everything Else', 'WASM x JS'],
+                datasets: [{
+                    label: 'Tech Stack',
+                    data: [50, 25, 10, 10, 2, 3],
+                    backgroundColor: [
+                        '#62d75f', '#FFD700', '#7c3aed', '#60a5fa', '#eeeeee', '#d70000',
+                    ],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                }
+            }
+        });
+    </script>
+
+
+<script>
+    const chatologyToggle = document.getElementById('chatologyToggle');
+    const chatologyContainer = document.getElementById('chatologyContainer');
+    const chatologyArrowIcon = document.getElementById('chatologyArrowIcon');
+
+    chatologyToggle.addEventListener('click', () => {
+        const isHidden = chatologyContainer.classList.contains('hidden');
+
+        chatologyContainer.classList.toggle('hidden');
+        chatologyArrowIcon.classList.toggle('rotate-180');
+    });
+
+    const toggleButton = document.getElementById('introVidToggle');
+    const videoContainer = document.getElementById('videoContainer');
+    const arrowIcon = document.getElementById('arrowIcon');
+
+    toggleButton.addEventListener('click', () => {
+        const isHidden = videoContainer.classList.contains('hidden');
+
+        videoContainer.classList.toggle('hidden');
+        arrowIcon.classList.toggle('rotate-180');
+    });
+</script>
+<script>
+    // Toggle visibility of featured post content
+    document.querySelectorAll('.featured-post-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const content = card.querySelector('.featured-post-content');
+            content.classList.toggle('hidden');
+        });
+    });
+</script>
+</body>
+</html>
+
+</body>
+</html>
